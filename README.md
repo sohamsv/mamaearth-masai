@@ -37,8 +37,7 @@ Every numerical figure reported in this repository is strictly computed and veri
 │   └── monthly_revenue_trend.png       # Line chart: Outlier-corrected monthly revenue trend (March peak)
 └── narrator/
     ├── findings.json                   # Structured JSON metric store generated dynamically by clean_and_eda.py
-    ├── generate_narrative.py           # Gemini 3.8 Flash GenAI narrator script with offline fallback & verification
-    └── sample_output.txt               # Verified executive SCR narrative output matching numeric checklist
+    └── generate_narrative.py           # Gemini 3.8 Flash GenAI narrator script with offline fallback & verification
 ```
 
 ---
@@ -204,7 +203,7 @@ The GenAI Narrator evaluates the verified metrics from `findings.json` and outpu
 | Duplicate Reconciliation Delta | `₹2,501.90` | **PASS** |
 | True Peak Month & Revenue | `March (2026-03)` / `₹20,318.90` | **PASS** |
 
-The final verified narrative is saved under `narrator/sample_output.txt`.
+The final verified narrative is displayed on stdout along with verification check results.
 
 ---
 
