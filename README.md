@@ -4,7 +4,7 @@
 
 ---
 
-## 📌 Executive Summary
+## Executive Summary
 
 This repository presents an end-to-end data analytics and Generative AI intelligence pipeline built for Mamaearth's Growth Analytics team. The pipeline investigates product return patterns, reconciles revenue metrics across raw and cleaned relational stores, identifies critical risk segments (such as Cash on Delivery orders in Tier-2 cities), and synthesizes these quantitative findings into an executive Situation-Complication-Resolution (SCR) business narrative powered by Google's Gemini API with a zero-dependency offline fallback path.
 
@@ -15,7 +15,7 @@ Every numerical figure reported in this repository is strictly computed and veri
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -42,7 +42,7 @@ Every numerical figure reported in this repository is strictly computed and veri
 
 ---
 
-## 🔄 Pipeline Execution Order & Data Flow
+## Pipeline Execution Order & Data Flow
 
 To reproduce all results end-to-end, execute the pipeline components in the exact order shown below:
 
@@ -70,7 +70,7 @@ To reproduce all results end-to-end, execute the pipeline components in the exac
 
 ---
 
-## 🚀 How to Run the Pipeline
+## How to Run the Pipeline
 
 ### Prerequisites
 
@@ -140,7 +140,7 @@ python narrator/generate_narrative.py
 
 ---
 
-## 📊 Summary of Verified Analytics Findings
+## Summary of Verified Analytics Findings
 
 ### Part 1 — SQL Key Results (Raw Data)
 * **Report (a) Order Totals:** Total Orders = `180`, Total Revenue = `₹99,860.20`, Average Order Value = `₹554.78`.
@@ -207,7 +207,7 @@ The final verified narrative is displayed on stdout along with verification chec
 
 ---
 
-## 🏆 Project Compliance Checklist
+## Project Compliance Checklist
 
 - [x] **No hardcoded statistics:** All numbers dynamically flow SQL -> Pandas -> JSON -> GenAI.
 - [x] **Exact structural match:** All files committed in requested layout.
