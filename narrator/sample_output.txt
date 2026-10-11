@@ -1,0 +1,11 @@
+### Situation
+Mamaearth's e-commerce operations generated a verified cleaned total revenue of INR 97,358.30 across 175 deduplicated orders (reconciled against the raw database total of INR 99,860.20 after accounting for a INR 2,501.90 duplicate-order delta). An outlier-corrected time series analysis reveals that March (2026-03) represents the true peak revenue month at INR 20,318.90. January (2026-01) initially appeared as the top month with INR 29,582.10, but once two bulk order outliers were removed, January's baseline revenue adjusted to INR 11,637.10.
+
+### Complication
+Product returns are severely eroding operational margins, heavily concentrated in Cash on Delivery (COD) transactions. While electronic payment methods maintain healthy return rates—CARD at 14.7% and UPI at 18.9%—COD orders suffer from an alarming return rate of 44.4%. Multi-level segmentation identifies Tier-2 COD orders as the single highest-risk segment, where return rate peaks at 54.5%. Furthermore, correlation analysis shows no significant relationship between discount percentages and returns (r = -0.09, negligible), disproving the assumption that higher promotional discounts reduce return rates.
+
+### Resolution
+Regional Ops and Finance leadership must immediately execute targeted interventions:
+1. Restrict or require partial digital pre-payment for COD orders in Tier-2 cities where return rates reach 54.5%.
+2. Re-allocate promotional spend away from blanket discount campaigns, given their negligible impact on return mitigation.
+3. Align supply chain capacity and inventory planning with the true organic demand peak observed in March (2026-03 revenue of INR 20,318.90), rather than distorted January bulk spikes.

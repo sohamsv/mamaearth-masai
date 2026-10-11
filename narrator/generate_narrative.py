@@ -204,7 +204,11 @@ Output format: ### Situation, ### Complication, ### Resolution.
     last_error = None
 
     try:
-        client = genai.Client(api_key=api_key)
+        # Client configured with explicit timeout (15s >= 10s minimum per Task 3 specification)
+        client = genai.Client(
+            api_key=api_key,
+            http_options=types.HttpOptions(timeout=15000)
+        )
 
         for model_name in models_to_try:
             for attempt in range(1, MAX_RETRIES + 1):
@@ -223,7 +227,9 @@ Output format: ### Situation, ### Complication, ### Resolution.
                         contents=prompt,
                         config=types.GenerateContentConfig(
                             system_instruction=system_instruction,
+                            # temperature=0.0: deterministic — this is a factual business report, not creative writing
                             temperature=0.0,
+                            # max_output_tokens=1500 (explicitly >= 300 per Task 3, enough for 3 SCR sections)
                             max_output_tokens=1500
                         )
                     )
